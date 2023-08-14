@@ -1,0 +1,68 @@
+.slider-default {
+  align-items: flex-start;
+  background-color: var(--neutral-3);
+  border-radius: 100px;
+  display: flex;
+  flex-direction: column;
+  height: 4px;
+  justify-content: center;
+  position: relative;
+  width: 383px;
+  cursor: pointer; /* Add cursor to indicate draggable area */
+}
+
+.slider-fill {
+  position: absolute;
+  height: 100%;
+  background-color: #1890ff;
+  border-radius: 100px 0 0 100px;
+  transition: width 0.2s ease-in-out; /* Add transition for width change */
+}
+
+.slider-handle {
+  position: absolute;
+  width: 24px; /* Increase handle size for easier dragging */
+  height: 24px; /* Increase handle size for easier dragging */
+  background-color: var(--neutral-1);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  cursor: grab; /* Change cursor on handle for dragging */
+  user-select: none; /* Prevent text selection during dragging */
+  z-index: 2; /* Place the handle above the slider line */
+  outline: 2px solid #1890ff; /* Add blue outline */
+  transition: outline-color 0.2s ease-in-out; /* Add transition for outline color change */
+}
+
+.slider-handle.dragging {
+  outline-color: darkblue; /* Change outline color when dragging */
+}
+.slider-default input[type="number"] {
+  position: absolute;
+  top: -.009in;
+  left: -0.01in;
+  width: 190px; /* Adjust width as needed */
+  z-index: 1;
+  display: flex;
+  border: 3px solid #000000; /* Add a border to the input box */
+  border-radius: 4px; /* Add border radius for a softer look */
+  padding: 4px; /* Add padding for spacing inside the input box */
+  background-color: white; /* Add a background color to the input box */
+}
+
+/* Adjust the input box position outside the .slider-default class */
+.slider-input-container {
+  position: relative;
+  top: -.8in;
+  left: 1.7in;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 190px;
+  height: 0;
+  z-index: 1;
+  border: 3px solid #000000; /* Add a border to the input box */
+  border-radius: 4px; /* Add border radius for a softer look */
+  padding: 10px; /* Add padding for spacing inside the input box */
+  background-color: white; /* Add a background color to the input box */
+}
