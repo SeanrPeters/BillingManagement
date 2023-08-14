@@ -1,1 +1,0 @@
-export { SliderDefault } from "./SliderDefault";

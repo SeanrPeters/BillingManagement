@@ -1,1 +1,0 @@
-export { ComponentsHandle } from "./ComponentsHandle";
