@@ -1,0 +1,19 @@
+.components-range .components-handle-wrapper {
+  height: 1px;
+  margin-bottom: -1px;
+  position: relative;
+  width: 1px;
+}
+
+.components-range .components-handle-instance {
+  left: -7px !important;
+  top: -7px !important;
+}
+
+.components-range .components-handle-instance-wrapper {
+  height: 1px;
+  margin-bottom: -1px;
+  margin-right: -1px;
+  position: relative;
+  width: 1px;
+}
