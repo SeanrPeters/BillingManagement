@@ -1,0 +1,19 @@
+// 8/8/2023
+// Sean Peters
+// This is the preview.js file to see the preview
+/** @type { import('@storybook/react').Preview } */
+const preview = {
+  parameters: {
+    actions: { argTypesRegex: "^on[A-Z].*" },
+    controls: {
+      matchers: {
+        color: /(background|color)$/i,
+        date: /Date$/,
+      },
+    },
+  },
+};
+
+export const decorators = [(Story, context) => <Story key={JSON.stringify(context.args)} />];
+
+export default preview;
