@@ -1,0 +1,83 @@
+.dropdown {
+  height: 221px;
+  width: 180px;
+}
+
+.dropdown .top {
+  height: 42px;
+  width: 97px;
+}
+
+.dropdown .profile {
+  height: 42px;
+}
+
+.dropdown .frame {
+  align-items: center;
+  display: inline-flex;
+  gap: 21px;
+  position: relative;
+}
+
+.dropdown .frame-wrapper {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 16px;
+  position: relative;
+}
+
+.dropdown .div {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 4px;
+  position: relative;
+}
+
+.dropdown .text-wrapper {
+  color: #2e3271;
+  font-family: "Manrope", Helvetica;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  width: fit-content;
+}
+
+.dropdown .div-wrapper {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 4px;
+  position: relative;
+}
+
+.dropdown .text-wrapper-2 {
+  color: #7c8db5b8;
+  font-family: "Manrope", Helvetica;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  width: fit-content;
+}
+
+.dropdown .icon-chevron-down {
+  height: 16px;
+  position: relative;
+  width: 16px;
+}
+
+.dropdown .iconly-light-arrow {
+  height: 16px !important;
+  left: 0 !important;
+  position: absolute !important;
+  top: 0 !important;
+  width: 16px !important;
+}
